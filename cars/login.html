@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    
+            
+form{
+border:4px solid #f1f1f1;
+}
+<div class="topnav">
+                <a class="active" href="#">Home</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">SignUp</a>
+                <a href="#">Contact</a>
+            </div>
+
+   
+            body{
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .topnav {
+             overflow: hidden;
+             background-color: #333;
+        
+            }
+            .topnav a {
+             float: left;
+            color:#f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        
+            }
+            .topnav a:hover {
+             background-color: #ddd;
+             color: black;
+        
+            }
+            .topnav a.active {
+             background-color: #4CAF50;
+             color: white;
+        
+            }
+input[type=text],input[type=password]{
+width:100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    }
+
+button: hover{
+opacity: 0.8
+}
+
+.cancelbtn{
+width: auto;
+padding: 10px 18px;
+background-color: #f44336
+
+}
+
+.container{
+    padding:16px
+    }
+
+ span.pass{
+     float: right;
+     padding-top: 16px
+ }   
+
+@media screen and (max-width: 300px){
+span.pass{
+    display: blockk
+    float: none;
+}
+.cancelbtn {
+    width: 100%;
+}
+}
+</style>
+   <body>
+        <div class="topnav">
+                <a class="active" href="home.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">SignUp</a>
+                <a href="#">Contact</a>
+            </div>
+    <div class="container">
+        <h1><p style="text-align:center">Login here</p></h1>
+        <form action="#">
+       <label><b>Username</b></label>
+       <input type="text" placeholder="Enter Username" name="uname" required><br>
+       
+       <label><b>Password</b></label>
+       <input type="password" placeholder="Enter Password" name="pass" required><br>
+
+       <button type="submit">Login</button><br>
+       <input type="checkbox" checked="checked">Remember me
+     </div>
+     
+      <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="pass">Forgot <a href="#">password?</a></span>
+       </div>
+       </form>
+   </body>
+</html>
