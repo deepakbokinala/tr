@@ -1,0 +1,263 @@
+<html>
+    <head>
+        <title>
+            Point of Sale
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+<style>
+body, html {
+    
+    height: 100%}
+    
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Amatic SC", sans-serif}
+.heading{
+    font-weight: 900;
+    text-align: center;
+}
+.logout{
+    padding-right: 10px;
+}
+.navigation{
+    margin-bottom: 20px ;
+
+}
+.menu {
+    display: none;
+    padding: 4%;
+
+    }
+
+.highlights{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1500417148159-68083bd7333a);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+    
+</style>
+
+    </head>
+
+    <body>
+
+      
+<div class = "navigation" >
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="javascript:void(0)" onclick="openMenu(event, 'mainmenu');"><b>POINT OF SALE</b> </a>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link"><b>Support</b></a>
+          </li>
+          
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item cart-item">
+      
+                 <a class="nav-link fas fa-shopping-cart">  <b>CART</b></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Profile</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">About</a>
+              <a class="dropdown-item" href="#">Logout</a>
+              
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+   
+    
+        <!-- Menu Container -->
+<center>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Veg
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="javascript:void(0)" onclick="openMenu(event, 'Veg-Starter');" id=" ">Veg-Starter</a>
+              <a class="dropdown-item" href="javascript:void(0)" onclick="openMenu(event, 'Veg-Main-Course');">Veg-Main-Course</a>
+            </div>
+        </div>
+
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Non-Veg
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="javascript:void(0)" onclick="openMenu(event, 'Non-Veg-Starter');" id=" ">Non-Veg-Starter</a>
+              <a class="dropdown-item" href="javascript:void(0)" onclick="openMenu(event, 'Non-veg-Maincourse');" id=" ">Non-veg-Maincourse</a>
+            </div>
+          </div>
+
+
+</center>
+
+
+
+
+
+<div id="menu">
+    <div class="mainmenu" hidden>
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Veg-Starter');" id=" ">
+          <div class="tablink"> Pizza</div>
+        </a>
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Veg-Main-Course');">
+          <div class="tablink">Salads</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Non-Veg-Starter');">
+            <div class="tablink">Non-Veg-Starter</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Non-veg-Maincourse');">
+            <div class="tablink">Non-veg-Maincourse</div>
+          </a>
+    </div>
+
+  
+
+      <div id="Veg-Starter" class="menu">
+
+        <h1><b>Chilli Paneer</b> <span>₹ 250</span></h1>
+        <p class="">Fresh chillies, fresh butter, fresh paneer</p>
+
+        <hr>
+     
+        <h1><b>Paneer Tikka</b> <span class="  ">₹ 260</span></h1>
+        <p class="">Fresh Paneer , Fresh grinded masalas, </p>
+        <hr>
+        
+        <h1><b>Gobi 65</b> <span class="  ">₹ 220</span></h1>
+        <p class="">Fresh gobi , Freshly grated cabbage </p>
+        <hr>
+  
+        <h1><b>Aloo 65</b> <span class="  ">₹ 180</span></h1>
+        <p class="">Fresh potatoes, Fresh corriander </p>
+        <hr>
+  
+        <h1><b>Crispy corn</b> <span class=" "></span><span class="  ">₹ 240</span></h1>
+        <p class="">Fresh corn, Rice flour</p>
+        <hr>
+  
+        <h1><b>Mushroom Salt & Pepper  </b>  <span class="highlights">New!</span> &nbsp; <span class="  ">₹ 270</span></h1>
+        <p class="">Fresh mushrooms, mozzarella, parma, bacon, fresh arugula</p>
+      </div>
+  
+      <div id="Veg-Main-Course" class="menu">
+        <h1><b>Cauliflower Manchuria</b> <span>Gravy</span> <span class="  ">₹ 220</span></h1>
+        <p class="">Special sauce, cauliflower, parmesan, chillies</p>
+        <hr>
+     
+        <h1><b>Paneer Butter Masala</b> <span class="  ">₹ 270 </span></h1>
+        <p class="">Ravioli filled with cheese</p>
+        <hr>
+        
+        <h1><b>Baby corn chilli gravy</b> <span class="  ">₹ 240</span></h1>
+        <p class="">Fresh tomatoes, onions, ground beef</p>
+        <hr>
+  
+        <h1><b>Mushroom chilli gravy</b> <span class="  ">₹ 250</span></h1>
+        <p class="">Salmon, shrimp, lobster, garlic</p>
+      </div>
+  
+
+      <div id="Non-Veg-Starter" class="menu">
+        <h1><b>Chicken 65</b> <span class=" "></span><span class=" ">₹ 220</span></h1>
+        <p class="">Ask the waiter</p>
+        <hr>
+     
+        <h1><b>Chicken Tikka </b> <span class="  ">₹ 240</span></h1>
+        <p class="">Bread with pesto, tomatoes, onion, garlic</p>
+        <hr>
+        
+        <h1><b>Chicken Tandoori</b> <span class="  ">₹ 270 </span></h1>
+        <p class="">Grilled ciabatta, garlic butter, onions</p>
+        <hr>
+
+        <h1><b>Chilli Prawns</b> <span class="  ">₹ 250 </span></h1>
+        <p class="">Grilled ciabatta, garlic butter, onions</p>
+        <hr>
+
+        <h1><b>Apollo Fish</b> <span class="  ">₹ 320 </span></h1>
+        <p class="">Grilled ciabatta, garlic butter, onions</p>
+        <hr>
+        
+        <h1><b>Pepper Chicken</b> <span class="  ">₹ 250</span></h1>
+        <p class="">Tomatoes and mozzarella</p>
+      </div>
+
+      <div id="Non-veg-Maincourse" class="menu">
+        <h1><b>Today's Soup</b> <span class="highlights">Seasonal</span><span class=" ">₹ 110</span></h1>
+        <p class="">Ask the waiter</p>
+        <hr>
+     
+        <h1><b>Chicken Biryani</b> <span class="  ">₹ 280</span></h1>
+        <p class="">Bread with pesto, tomatoes, onion, garlic</p>
+        <hr>
+        
+        <h1><b>Chicken Sambar Rice</b> <span class="  ">₹ 190</span></h1>
+        <p class="">Grilled ciabatta, garlic butter, onions</p>
+        <hr>
+        
+        <h1><b>Prawn Biryani</b> <span class="  ">₹ 320</span></h1>
+        <p class="">Tomatoes and mozzarella</p>
+        <hr>
+
+        <h1><b>Andhra Chicken Curry</b> <span class="  ">₹ 250</span></h1>
+        <p class="">Grilled ciabatta, garlic butter, onions</p>
+        <hr>
+        
+        <h1><b>Mutton Roghangosh</b> <span class="  ">₹ 330</span></h1>
+        <p class="">Grilled ciabatta, garlic butter, onions</p>
+      </div>
+
+      <br>
+  
+    </div>
+  </div>
+
+
+    </body>
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            event.preventDefault;
+          var i, x, tablinks;
+          x = document.getElementsByClassName("menu");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+             
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < x.length; i++) {
+             tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+             tablinks[i].style.display="none";
+          }
+          document.getElementById(menuName).style.display = "block";
+          evt.currentTarget.firstElementChild.className += " w3-red";
+        }
+        document.getElementById("myLink").click();
+
+        document
+
+        
+    </script>
+        
+</html>
